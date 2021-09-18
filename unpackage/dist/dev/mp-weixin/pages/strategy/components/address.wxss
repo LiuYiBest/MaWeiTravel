@@ -1,0 +1,62 @@
+
+.address-text.data-v-3bbe3ea4 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.address-text image.data-v-3bbe3ea4 {
+	width: 33rpx;
+	height: 33rpx;
+	padding-left: 30rpx;
+}
+.address.data-v-3bbe3ea4 {
+	position: relative;
+	height: 400rpx;
+}
+.address-list.data-v-3bbe3ea4 {
+	position: absolute;
+	left: 10rpx;
+	top: 10rpx;
+	z-index: 999;
+}
+.address-img.data-v-3bbe3ea4 {
+	width: 100%;
+	height: 400rpx;
+}
+.address-img image.data-v-3bbe3ea4 {
+	width: 750rpx !important;
+	height: 400rpx;
+}
+.words.data-v-3bbe3ea4 {
+	font-size: 40rpx;
+	color: #000000;
+	font-weight: bold;
+}
+.words-eng.data-v-3bbe3ea4 {
+	font-size: 40rpx;
+	color: #0000b3;
+}
+.back.data-v-3bbe3ea4 {
+	/* background: rgba(0, 21, 0, 0.1); */
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 400rpx;
+	width: 100%;
+}
+
+/* 天气 */
+.Plane image.data-v-3bbe3ea4 {
+	/* height:20%;display:flex;justify-content:center; */
+	width: 100%;
+	border-radius: 20rpx;
+	height: 150rpx;
+}
+.Plane.data-v-3bbe3ea4 {
+	margin: 40rpx 20rpx;
+	height: 150rpx;
+}
+

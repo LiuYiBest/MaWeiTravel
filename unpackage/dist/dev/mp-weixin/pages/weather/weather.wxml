@@ -1,0 +1,1 @@
+<view class="content"><mckou-weather class="vue-ref" vue-id="74749216-1" weatherData="{{weatherData}}" data-ref="mckouWeather" bind:__l="__l"></mckou-weather></view>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,oN;AACAA,UAAU,CAACC,iBAAD,CAAV,C","file":"pages/weather/choudemo.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pages/weather/choudemo.vue'\ncreatePage(Page)"],"sourceRoot":""}

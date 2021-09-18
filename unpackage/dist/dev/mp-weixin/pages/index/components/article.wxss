@@ -1,0 +1,124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* flex内容区 */
+.active {
+		margin: 0 20rpx;
+}
+.conteng {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-wrap: warp;
+		        flex-wrap: warp;
+		-webkit-box-pack: justify;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		width: 100%;
+		-webkit-flex-wrap: wrap;
+		overflow: hidden;
+}
+.conteng-article {
+		width: 48%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-webkit-flex-direction: column;
+		        flex-direction: column;
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+}
+.purchase {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: flex;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		        align-items: center;
+		padding-bottom: 10rpx;
+}
+.conteng-img {
+		height: 400rpx !important;
+		object-fit: cover;
+		overflow: hidden;
+}
+.conteng-img image {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: cover;
+		border-radius: 10rpx;
+}
+.active-list {
+		font-size: 32rpx;
+		color: #000000;
+		margin: 0rpx 0;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: ;
+		overflow: hidden;
+}
+.active-title {
+		font-size: 32rpx;
+		color: #4dd3ff;
+		font-weight: bold;
+		line-height: 50rpx;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+		overflow: hidden;
+}
+.active-label {
+		font-size: 25rpx;
+		color:#d0b083 ;
+}
+.active-price {
+		font-size: 36rpx;
+		color: #ff6b28;
+		padding-right: 9rpx;
+}
+.active-purchase {
+		font-size: 30rpx;
+		color: #cacaca;
+}
+.active-introduce {
+		padding-left: 10rpx;
+}
+

@@ -1,0 +1,65 @@
+
+.search-code image.data-v-8b3e5b4a {
+	width: 50rpx;
+	height: 50rpx;
+}
+.search-code.data-v-8b3e5b4a {
+	width: 50rpx;
+	height: 50rpx;
+	padding: 0 15rpx;
+}
+.search-img.data-v-8b3e5b4a {
+	margin: auto 0 auto 20rpx;
+	width: 40rpx;
+	height: 40rpx;
+}
+.search.data-v-8b3e5b4a {
+	height: 70rpx;
+	line-height: 70rpx;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: flex;
+	        flex-direction: flex;
+	background: #FFFFFF;
+	border-top-left-radius: 50rpx;
+	border-bottom-left-radius: 50rpx;
+	border-bottom-right-radius: 50rpx;
+	border-top-right-radius: 50rpx;
+}
+.search input.data-v-8b3e5b4a {
+	height: 70rpx;
+	line-height: 70rpx;
+	width: 100%;
+	font-size: 30rpx;
+	color: #666666;
+}
+.search-cont.data-v-8b3e5b4a {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	height: 70rpx;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, #99CCFF), color-stop(90%, #4DB8FF));
+	background: -webkit-linear-gradient(bottom, #99CCFF 20%, #4DB8FF 90%);
+	background: linear-gradient(to top, #99CCFF 20%, #4DB8FF 90%);
+	padding: 30rpx 0;
+}
+
+/* 轮播样式 */
+.imageurl.data-v-8b3e5b4a {
+	width: 100%;
+	height: 300rpx !important;
+}
+swiper.data-v-8b3e5b4a {
+	height: 300rpx !important;
+}
+

@@ -1,0 +1,1 @@
+<view class="page"><imgs-banner vue-id="1148e895-1" imgList="{{imgList}}" currentImg="{{currentImg}}" bind:__l="__l"></imgs-banner></view>

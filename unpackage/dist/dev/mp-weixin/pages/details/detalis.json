@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "旅行记",
+  "usingComponents": {
+    "navs": "/pages/details/components/navs",
+    "banner": "/pages/details/components/banner",
+    "matter": "/pages/details/components/matter",
+    "message": "/pages/details/components/message"
+  }
+}

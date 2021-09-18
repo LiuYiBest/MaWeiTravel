@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "商品",
+  "usingComponents": {
+    "imgs-banner": "/common/imgsBanner-tag"
+  }
+}

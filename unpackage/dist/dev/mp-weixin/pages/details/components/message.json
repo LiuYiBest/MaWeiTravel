@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "motal": "/element/modal",
+    "h-mmessages": "/components/HM-messages/HM-messages"
+  }
+}

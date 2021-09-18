@@ -1,0 +1,82 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 旅游区场景 */
+.conteng.data-v-39194312 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: warp;
+	        flex-wrap: warp;
+	width: 100%;
+	-webkit-flex-wrap: wrap;
+	overflow: hidden;
+	border: 1rpx solid #EEEEEE;
+	border-radius: 10rpx;
+}
+.conteng view.data-v-39194312 {
+	width: 25%;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 20rpx 0;
+}
+.tick.data-v-39194312 {
+	font-size: 30rpx;
+	color: #00AAFF;
+	font-weight: bold;
+}
+.nametext.data-v-39194312 {
+	font-size: 23rpx;
+	color: #000033;
+}
+

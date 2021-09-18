@@ -1,0 +1,37 @@
+
+.active.data-v-c5681054 {
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(10%, #b3ffff), color-stop(90%, #33d6ff));
+	background-image: -webkit-linear-gradient(left, #b3ffff 10%, #33d6ff 90%);
+	background-image: linear-gradient(to right, #b3ffff 10%, #33d6ff 90%);
+	border-top-right-radius: 50rpx;
+	border-top-left-radius: 50rpx;
+	border-bottom-left-radius: 50rpx;
+	border-bottom-right-radius: 50rpx;
+}
+.activeb.data-v-c5681054 {
+	color: #292c33 !important;
+}
+.scroll.data-v-c5681054 {
+	white-space: nowrap;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	background: #FFFFFF;
+	padding: 20rpx 0;
+}
+.con-text-a.data-v-c5681054 {
+	color: #292c33;
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.con-text-b.data-v-c5681054 {
+	color: #9ea0a5;
+	font-size: 23rpx;
+}
+.list-cont.data-v-c5681054 {
+	width: 180rpx;
+	display: inline-block;
+	text-align: center;
+}
+

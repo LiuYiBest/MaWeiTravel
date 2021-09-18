@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "天气",
+  "usingComponents": {
+    "mckou-weather": "/components/mckou-weather/mckouWeather"
+  }
+}

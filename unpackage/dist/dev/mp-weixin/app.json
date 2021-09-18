@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/strategy/strategy",
+    "pages/my/my",
+    "pages/city/city",
+    "pages/travels/travels",
+    "pages/details/detalis",
+    "pages/search/search",
+    "pages/weather/weather",
+    "pages/index/map",
+    "pages/my/choudemo",
+    "pages/my/sigin-in",
+    "pages/my/shop",
+    "pages/my/shoucan",
+    "pages/my/guanyu",
+    "pages/my/statement"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "马尾旅游",
+    "navigationBarBackgroundColor": "#33AEFF",
+    "backgroundColor": "#33AEFF"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tab/首页灰.png",
+        "selectedIconPath": "static/tab/首页蓝.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/strategy/strategy",
+        "iconPath": "static/tab/攻略灰.png",
+        "selectedIconPath": "static/tab/攻略蓝.png",
+        "text": "攻略"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/tab/我的灰.png",
+        "selectedIconPath": "static/tab/我的蓝.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "none-data": "/element/none"
+  },
+  "sitemapLocation": "sitemap.json"
+}
