@@ -155,7 +155,6 @@ var _default =
         this.videoing = false;
         console.log('没有视频');
       }
-
     } } };exports.default = _default;
 
 /***/ }),

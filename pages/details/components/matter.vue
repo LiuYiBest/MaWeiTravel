@@ -38,8 +38,7 @@
 				}else{
 					this.videoing = false
 					console.log('没有视频')
-				}
-				
+				}			
 			}
 		}
 	}

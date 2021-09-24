@@ -201,14 +201,6 @@ var qqmapsdk = new QQMapWX({
   },
   onLoad: function onLoad() {
     var map = this.map;
-    // this.getWidthHeight(e => {
-    // 	console.log(e);
-    //   map.controls[0].position.top = e.height - 45
-    //   map.controls[0].position.left = e.width/2 - 10
-    //   this.setData({
-    // 	map: map
-    //   })
-    // })
 
   },
   methods: {
@@ -270,7 +262,6 @@ var qqmapsdk = new QQMapWX({
           }
 
           setTimeout(function () {
-            console.log('************');
             that.scrollTop = 1;
           }, 1000);
         },
@@ -335,7 +326,6 @@ var qqmapsdk = new QQMapWX({
         lat: address.location.lat,
         lng: address.location.lng };
 
-      console.log(address, a);
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
