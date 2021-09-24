@@ -149,7 +149,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 var _list = __webpack_require__(/*! ../../common/list.js */ 28);
 
 var _vuex = __webpack_require__(/*! vuex */ 12);function ownKeys(object, enumerableOnly) {var keys = Object.keys(object);if (Object.getOwnPropertySymbols) {var symbols = Object.getOwnPropertySymbols(object);if (enumerableOnly) symbols = symbols.filter(function (sym) {return Object.getOwnPropertyDescriptor(object, sym).enumerable;});keys.push.apply(keys, symbols);}return keys;}function _objectSpread(target) {for (var i = 1; i < arguments.length; i++) {var source = arguments[i] != null ? arguments[i] : {};if (i % 2) {ownKeys(Object(source), true).forEach(function (key) {_defineProperty(target, key, source[key]);});} else if (Object.getOwnPropertyDescriptors) {Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));} else {ownKeys(Object(source)).forEach(function (key) {Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));});}}return target;}function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}var Adress = function Adress() {__webpack_require__.e(/*! require.ensure | pages/strategy/components/address */ "pages/strategy/components/address").then((function () {return resolve(__webpack_require__(/*! ./components/address */ 184));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Locality = function Locality() {__webpack_require__.e(/*! require.ensure | pages/strategy/components/locality */ "pages/strategy/components/locality").then((function () {return resolve(__webpack_require__(/*! ./components/locality */ 191));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var Content = function Content() {__webpack_require__.e(/*! require.ensure | pages/strategy/components/content */ "pages/strategy/components/content").then((function () {return resolve(__webpack_require__(/*! ./components/content */ 198));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
@@ -161,7 +160,6 @@ var listdata = db.collection('userdata');var _default =
 {
   name: 'strategy',
   components: {
-
     Adress: Adress,
     Locality: Locality,
     Content: Content },
@@ -196,9 +194,7 @@ var listdata = db.collection('userdata');var _default =
       (0, _list.addressdata)().
       then(function (res) {
         // console.log(res)//位置信息测试
-        //
         _this.address = res.result.ad_info.city;
-
         // 定位成功查询数据库取出该城市下的景点数据 
         var cityone = '福州市';
         _this.cityData(cityone);
@@ -260,9 +256,7 @@ var listdata = db.collection('userdata');var _default =
           datainfo: datainfo };
 
       });
-      // console.log(adddata)
       this.localdata = adddata;
-
     },
 
     // 跳到发表页面

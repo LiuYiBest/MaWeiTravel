@@ -9,7 +9,6 @@
 			<!-- @click="travels() -->
 			<image src="cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/写文章.png" mode="widthFix" @click="travels()"></image>
 		</view>
-
 	</view>
 </template>
 
@@ -29,7 +28,6 @@
 	export default {
 		name: 'strategy',
 		components: {
-			
 			Adress,
 			Locality,
 			Content
@@ -64,9 +62,7 @@
 			addressdata()
 			.then((res)=>{
 				// console.log(res)//位置信息测试
-				//
 				this.address = res.result.ad_info.city
-
 				// 定位成功查询数据库取出该城市下的景点数据 
 				let cityone = '福州市'
 				this.cityData(cityone)
@@ -99,7 +95,7 @@
 				console.log(err)
 			})
 		},
-			// tab切换筛选的数据
+		// tab切换筛选的数据
 		tabCity(cityone,name){
 			listdata.where({
 				datainfo:{
@@ -128,9 +124,7 @@
 					datainfo
 				}
 			})
-			// console.log(adddata)
 			this.localdata = adddata
-
 		},
 		
 		// 跳到发表页面
@@ -167,8 +161,6 @@
 				this.cityData(newValue)
 			}
 		}
-		
-		
 	}
 </script>
 

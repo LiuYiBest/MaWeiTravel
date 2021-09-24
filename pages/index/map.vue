@@ -69,14 +69,6 @@
 		},
 		onLoad() {
 			let map = this.map
-			// this.getWidthHeight(e => {
-			// 	console.log(e);
-			//   map.controls[0].position.top = e.height - 45
-			//   map.controls[0].position.left = e.width/2 - 10
-			//   this.setData({
-			// 	map: map
-			//   })
-			// })
 			
 		},
 		methods: {
@@ -138,7 +130,6 @@
 						}
 						
 						setTimeout(() => {
-							console.log('************');
 							that.scrollTop = 1
 						}, 1000)
 					},
@@ -203,7 +194,6 @@
 					lat: address.location.lat,
 					lng: address.location.lng
 				}
-				console.log(address, a)
 			}
 		}
 	}
