@@ -45,7 +45,6 @@
 			},
 			chooseMaps(){
 				uni.navigateTo({
-					
 					url:'../index/map'
 				})
 			},
