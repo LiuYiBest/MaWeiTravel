@@ -1,6 +1,5 @@
 <template>
 	<view>
-
 		<!-- 搜索框-->
 		<view class="search-cont">
 			<view class="search-code">
@@ -39,7 +38,6 @@
 			<view>
 				<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true" indicator-color="rgba(255, 255, 255)"
 				 indicator-active-color="#80E0ff">
-					<!-- 使用bolck报错script错误 -->
 					<swiper-item v-for="(item,index) in topSwiper" :key="index">
 						<view class="swiper-item">
 							<image :src="item.imgsrc" mode="aspectFill" class="imageurl"></image>

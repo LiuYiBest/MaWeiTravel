@@ -158,10 +158,8 @@ var _list = __webpack_require__(/*! ../common/list.js */ 28); //
 // 引入公用存储用户登录
 var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure | components/HM-messages/HM-messages */ "components/HM-messages/HM-messages").then((function () {return resolve(__webpack_require__(/*! @/components/HM-messages/HM-messages.vue */ 205));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { name: 'modals', components: { HMmessages: HMmessages }, //注册组件使用
   data: function data() {return { modaishow: false, message: '' };}, methods: { //取消模态框
-    messcancel: function messcancel() {this.modaishow = false;}, init: function init(message) {this.modaishow = true;
-      this.message = message;
+    messcancel: function messcancel() {this.modaishow = false;}, init: function init(message) {this.modaishow = true;this.message = message;
     },
-
     // 发起登录取到用户信息
     getUserInfo: function getUserInfo(event) {var _this = this;
       console.log(event);
@@ -176,7 +174,6 @@ var HMmessages = function HMmessages() {__webpack_require__.e(/*! require.ensure
       }).catch(function (err) {
         console.log(err);
       });
-
     } } };exports.default = _default;
 
 /***/ }),

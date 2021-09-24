@@ -72,7 +72,7 @@
 	// 引入预览图片  定位addressdata 
 	import {preview} from '../../common/list.js'
 	import {mapState} from 'vuex'
-	// 引入即可反馈组件
+	// 引入及时反馈组件
 	import HMmessages from "@/components/HM-messages/HM-messages.vue"
 	// 引入模态框
 	import motal from '../../element/modal.vue'
@@ -187,14 +187,6 @@
 
 			// 提交
 			suBmitd(){
-				// console.log('11222')
-				// console.log(this.classdata)
-				// console.log(this.titledata)
-				// console.log(this.tipsdata)
-				// console.log(this.topimg)
-				// console.log(this.videos)
-				// console.log(this.address)
-				// this.address == '福州市'
 				// this.HMmessages.show('标题必填',{icon:'success',background:'rgb(128, 191, 255)'})
 				if(this.titledata == ''){
 					let tip = '标题必填'
@@ -248,10 +240,10 @@
 			async userdata(){
 				// 先等待图片上传到云存储
 				let staticimg = await this.staticImg()
-				console.log(staticimg)
+				// console.log(staticimg)
 				// 等待视频上传到存储
 				let staticvideo = await this.staticVideo()
-				console.log(staticvideo)
+				// console.log(staticvideo)
 				// 最后一步把用户填写的所有数据一并提交到数据库
 				await this.cloudData(staticimg,staticvideo)
 			},
@@ -355,8 +347,6 @@
 					console.log(err)
 				})
 			},
-			
-			
 			
 			// 及时反馈
 			proMpt(tip){

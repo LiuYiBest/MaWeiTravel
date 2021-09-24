@@ -1,6 +1,6 @@
 <template>
 	<view class="active">
-		<!-- 文章 -->
+		<!-- 文章内容 -->
 		<view class="conteng">
 			<block v-for="(item,index) in Articleend" :key="index">
 				<view class="conteng-article">
@@ -33,11 +33,9 @@
 		}
 	}
 	
-	
 </script>
 
 <style>
-	/* flex内容区 */
 		.active {
 			margin: 0 20upx;
 		}

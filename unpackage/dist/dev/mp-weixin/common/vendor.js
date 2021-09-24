@@ -2085,25 +2085,20 @@ var load = {
 
 
 var navmin = {
-  loading: ''
-  // naving:'jingdian',
-  // pageid:0,
-  // uniload:'',
-  // nonedata:'',
-};
+  loading: '' };
+
 
 // tab切换没有数据的提示
 var nonemin = {
   nonedata: '' };
 
 
-
-// 城市选择页面跳转到攻略页面的城市名
+// 选择页面跳转到攻略页面
 var city = {
   citying: '' };
 
 
-// 城市选择页面跳转到发表页面的城市名
+// 选择页面跳转到发表页面
 var travecity = {
   traveing: '' };
 
@@ -2111,7 +2106,6 @@ var travecity = {
 //用户发表景点成功，传值给攻略页面让攻略页面再次请求数据
 var roturn = {
   pagesid: false };
-
 
 
 // 数据仓库
@@ -2125,11 +2119,9 @@ var state = {
   roturn: roturn };var _default =
 
 
-
-
-
 new _vuex.default.Store({
   state: state,
+  //处理异步操作
   actions: {
     listact: function listact(_listact, listadata) {
       console.log(listadata);
@@ -2147,7 +2139,6 @@ new _vuex.default.Store({
     } },
 
 
-
   //以对象形式传过来的参数
   navmuta: function navmuta(state, pullobj) {
     console.log(pullobj);
@@ -2161,7 +2152,7 @@ new _vuex.default.Store({
   },
 
 
-  // 城市选择页面跳转到攻略页面的城市名
+  // 选择页面跳转到攻略页面的
   citymuta: function citymuta(state, cityion) {
     console.log(cityion);
     state.city = {
@@ -2169,15 +2160,13 @@ new _vuex.default.Store({
 
   },
 
-  // // 城市选择页面跳转到攻略页面的城市名
+  // // 选择页面跳转到攻略页面
   travemuta: function travemuta(state, cityion) {
     console.log(cityion);
     state.travecity = {
       traveing: cityion };
 
   },
-
-
 
   // 用户发表景点成功，传值给攻略页面让攻略页面再次请求数据
   roturnmuta: function roturnmuta(state, pagesid) {
@@ -3366,8 +3355,7 @@ module.exports = "/static/tab/轮播图5.jpg";
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.homelist = exports.home = void 0; // clsaa 面向对象类
-// promise  封装
+Object.defineProperty(exports, "__esModule", { value: true });exports.homelist = exports.home = void 0; // promise  封装
 var db = wx.cloud.database(); //指定要操作数据库
 
 // 请求tab数据
@@ -3383,7 +3371,6 @@ var home = function home(tab) {
       reject(err);
     });
   });
-
 };
 
 // 请求攻略列表的数据  微信小程序每次请求limit最大为20  需要自定义
@@ -3400,8 +3387,10 @@ exports.home = home;var homelist = function homelist(listing, pageid) {
       reject(err);
     });
   });
+};
 
-};exports.homelist = homelist;
+//模块化导出
+exports.homelist = homelist;
 
 /***/ }),
 
@@ -9462,10 +9451,8 @@ internalMixin(Vue);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.login = exports.addressdata = void 0; //公用方法集合
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.preview = exports.login = exports.addressdata = void 0; //公用方法集合
 
-
-// 引入腾讯地图SDK核心类
 var QQMapWX = __webpack_require__(/*! ../common/qqmap-wx-jssdk.js */ 29);
 var qqmapsdk;
 
@@ -9508,7 +9495,7 @@ exports.addressdata = addressdata;var preview = function preview(index, imglist)
 };
 
 //公用存储用户登录数据
-var login = function login(user) {
+exports.preview = preview;var login = function login(user) {
   return new Promise(function (resolve, reject) {
     var db = wx.cloud.database();
     var users = db.collection('user');

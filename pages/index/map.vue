@@ -1,5 +1,5 @@
 <template>
-	<!-- 地图插件 -->
+	<!-- 地图SDK -->
 	<view class='container'>
 		<view class='header bg-ff'>
 		</view>

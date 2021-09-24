@@ -211,7 +211,7 @@ var listdata = db.collection('userdata');var _default =
       });
     },
 
-    // 定位成功查询数据库取出该城市下的景点数据  cityone形参
+    // 定位成功查询数据库取出景点数据  cityone形参
     cityData: function cityData(cityone) {var _this2 = this;
       listdata.where({
         datainfo: {

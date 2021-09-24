@@ -1,13 +1,8 @@
 <template>
-	<view>
-		
-			 
-		<!-- 图片 -->
+	<view> 
+		<!-- 地图表格组件 -->
 		<view class="ticket" >
-			
-			
 			<block v-for="(item, index) in ticket" :key="index">
-				
 				<view>
 					<form @submit="formSubmit" >
 					    <view class="uni-btn-v">
@@ -15,16 +10,12 @@
 								<image :src="item.image" mode="widthFix"></image>
 								<text>{{ item.name }}</text>
 							</button>
-					     
 					    </view>
-					</form>
-					
+					</form>	
 				</view>	
 			</block>
 		</view>
-
 	</view>
-	
 </template>
 
 <script>
@@ -71,8 +62,6 @@ export default {
 	}
 	    
 };
-
-		
 
 
 </script>

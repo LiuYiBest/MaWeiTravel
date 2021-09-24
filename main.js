@@ -4,7 +4,7 @@ import App from './App'
 Vue.config.productionTip = false
 
 
-// 引入vux
+// 引入vuex
 import store from './pages/store/store.js'
 Vue.prototype.$store = store
 

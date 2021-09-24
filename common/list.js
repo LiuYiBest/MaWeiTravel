@@ -1,7 +1,5 @@
 //公用方法集合
 
-
-// 引入腾讯地图SDK核心类
 var QQMapWX = require('../common/qqmap-wx-jssdk.js');
 var qqmapsdk;
 
@@ -62,4 +60,4 @@ var login = function(user){
 
 
 //导出外部
-export {addressdata,login}
+export {addressdata,login,preview}

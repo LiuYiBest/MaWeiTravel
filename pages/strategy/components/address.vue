@@ -6,12 +6,11 @@
 				<image src="cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/旅游景区地图.jpg" mode="aspectFill"></image>
 			</view>
 			<view class="address-list">
-				<!-- 点击定位跳转到搜索页面   @click="chooseCity()"-->
+				<!-- 点击定位-->
 				<view class="address-text" >
 					<text class="words" @click="dinwei()">{{address}}</text>
 					<image src="cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/定位.png" mode="widthFix"></image>
 				</view>
-				
 			</view>
 			<!-- 阴影 -->
 			<view class="back"></view>
@@ -32,7 +31,6 @@
 		},
 
 		methods:{
-			//点击定位跳转到搜索页面
 			chooseCity(){
 				uni.navigateTo({
 					url:'../city/city'
@@ -56,8 +54,6 @@
 				console.log(this.address)
 			}
 		}
-
-
 	}
 </script>
 

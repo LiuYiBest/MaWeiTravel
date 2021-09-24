@@ -1,5 +1,5 @@
 <template>
-	<!-- <view>攻略页面</view> -->
+	<!-- <攻略页面 -->
 	<view>
 		<Adress :address="address"></Adress>
 		<Locality></Locality>
@@ -79,7 +79,7 @@
 			})
 		},
 			
-		// 定位成功查询数据库取出该城市下的景点数据  cityone形参
+		// 定位成功查询数据库取出景点数据  cityone形参
 		cityData(cityone){
 			listdata.where({
 				datainfo:{

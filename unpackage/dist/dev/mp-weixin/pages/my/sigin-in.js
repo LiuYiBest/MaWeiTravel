@@ -260,7 +260,6 @@ var _default2 =
 
     // 绘制当月天数占的格子，并把它放到days数组中
     calculateDays: function calculateDays(year, month) {
-
       var thisMonthDays = this.getThisMonthDays(year, month);
       // this.columnsLen=Math.ceil(thisMonthDays/7);
       // console.log(this.columnsLen);

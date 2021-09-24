@@ -1,4 +1,3 @@
-// clsaa 面向对象类
 // promise  封装
 const db = wx.cloud.database()   //指定要操作数据库
 
@@ -15,7 +14,6 @@ var home = function(tab){
 			reject(err)
 		})
 	})
-	
 }
 
 // 请求攻略列表的数据  微信小程序每次请求limit最大为20  需要自定义
@@ -31,8 +29,8 @@ var homelist = function(listing,pageid){
 		.catch((err)=>{
 			reject(err)
 		})
-	})
-	
+	})	
 }
 
+//模块化导出
 export {home,homelist}

@@ -29,7 +29,6 @@
 				modaishow:false,	
 				message:'',
 			}
-			
 		},
 		methods:{
 			//取消模态框
@@ -40,7 +39,6 @@
 				this.modaishow = true
 				this.message = message
 			},
-			
 			// 发起登录取到用户信息
 			getUserInfo(event){
 				console.log(event)
@@ -55,7 +53,6 @@
 				}).catch((err)=>{
 					console.log(err)
 				})
-				
 			}
 		}
 	}

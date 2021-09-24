@@ -17,10 +17,6 @@ const load = {
 
 const navmin = {
 	loading:'',
-	// naving:'jingdian',
-	// pageid:0,
-	// uniload:'',
-	// nonedata:'',
 }
 
 // tab切换没有数据的提示
@@ -28,13 +24,12 @@ const nonemin = {
 	nonedata:''
 }
 
-
-// 城市选择页面跳转到攻略页面的城市名
+// 选择页面跳转到攻略页面
 const city = {
 	citying:''
 }
 
-// 城市选择页面跳转到发表页面的城市名
+// 选择页面跳转到发表页面
 const travecity = {
 	traveing:''
 }
@@ -43,7 +38,6 @@ const travecity = {
 const roturn = {
 	pagesid:false
 }
-
 
 // 数据仓库
 const state = {
@@ -56,11 +50,9 @@ const state = {
 	roturn,
 }
 
-
-
-
 export default new Vuex.Store({
 	state,
+	//处理异步操作
 	actions:{
 		listact(listact,listadata){
 			console.log(listadata)
@@ -77,8 +69,7 @@ export default new Vuex.Store({
 			}
 		}
 	},
-
-
+		
 	    //以对象形式传过来的参数
 		navmuta(state, pullobj) {
 			console.log(pullobj)
@@ -92,7 +83,7 @@ export default new Vuex.Store({
 		},
 
 
-		// 城市选择页面跳转到攻略页面的城市名
+		// 选择页面跳转到攻略页面的
 		citymuta(state,cityion){
 			console.log(cityion)
 			state.city = {
@@ -100,15 +91,13 @@ export default new Vuex.Store({
 			}
 		},
 				
-		// // 城市选择页面跳转到攻略页面的城市名
+		// // 选择页面跳转到攻略页面
 		travemuta(state,cityion){
 			console.log(cityion)
 			state.travecity = {
 				traveing:cityion
 			}
 		},
-
-
 
 		// 用户发表景点成功，传值给攻略页面让攻略页面再次请求数据
 		roturnmuta(state,pagesid){

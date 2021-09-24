@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<!-- 滑动组件 -->
+		<!-- 景点滑动置顶组件 -->
 		<scroll-view scroll-x="true" class="scroll" scroll-with-animation="true">
 			<view>
 				<block v-for="(item, index) in tab" :key="index">
@@ -36,14 +36,12 @@
 		methods: {
 			//点击下个图标更改样式
 			tbas(index,nav) {
-			console.log(index) //测试下标数据
-				console.log(nav) //测试NAV数据
+				// console.log(nav) //测试NAV数据
 				this.num = index
 				//请求数据库
 				homelist(nav)
 					.then((res) => {
-						console.log(res)				
-						// vuex传值 vuex登场
+						// vuex传值 
 						let listdata = res.data
 						this.$store.commit('listmuta', listdata)
 					})

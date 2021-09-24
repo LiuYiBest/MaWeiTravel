@@ -1,5 +1,5 @@
 <template>
-	<!-- 图片表格 -->
+	<!-- 景区文字表格 -->
 	<view style="margin: 0 20upx;">
 		<view class="conteng">
 			<block v-for="(item, index) in tables" :key="index">
@@ -41,7 +41,6 @@
 </script>
 
 <style scoped>
-	/* 旅游区场景 */
 	.conteng {
 		display: flex;
 		flex-wrap: warp;
@@ -60,8 +59,6 @@
 		box-sizing: border-box;
 		padding: 20upx 0;
 	}
-
-
 
 	.tick {
 		font-size: 30upx;

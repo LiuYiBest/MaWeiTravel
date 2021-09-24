@@ -1,4 +1,5 @@
 <template>
+	<!-- 天气折线图 -->
 	<view class="content">
 		<mckou-weather :weatherData="weatherData" ref="mckouWeather"></mckou-weather>
 	</view>

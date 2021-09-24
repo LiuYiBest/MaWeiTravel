@@ -176,9 +176,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
-
 var _list = __webpack_require__(/*! ../../common/list.js */ 28);function _toConsumableArray(arr) {return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();}function _nonIterableSpread() {throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");}function _unsupportedIterableToArray(o, minLen) {if (!o) return;if (typeof o === "string") return _arrayLikeToArray(o, minLen);var n = Object.prototype.toString.call(o).slice(8, -1);if (n === "Object" && o.constructor) n = o.constructor.name;if (n === "Map" || n === "Set") return Array.from(o);if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);}function _iterableToArray(iter) {if (typeof Symbol !== "undefined" && Symbol.iterator in Object(iter)) return Array.from(iter);}function _arrayWithoutHoles(arr) {if (Array.isArray(arr)) return _arrayLikeToArray(arr);}function _arrayLikeToArray(arr, len) {if (len == null || len > arr.length) len = arr.length;for (var i = 0, arr2 = new Array(len); i < len; i++) {arr2[i] = arr[i];}return arr2;}
 // 引入SDK核心类
 var QQMapWX = __webpack_require__(/*! ../../common/qqmap-wx-jssdk.js */ 29);
@@ -191,13 +188,10 @@ var qqmapsdk = new QQMapWX({
     return {
       citynone: true,
       address: '',
-      citydata: [], //搜索的城市
+      citydata: [],
       keywoeds: '',
       pageroute: '', //从哪个页面进来的路由
       city: [
-      {
-        "name": '福州市' },
-
       {
         "name": '福州市' },
 
@@ -240,13 +234,12 @@ var qqmapsdk = new QQMapWX({
       this.rouTes(cityion);
     },
 
-    // 取到热门城市
+    // 取到城市
     hotCity: function hotCity(city) {
       // console.log(city)
       this.rouTes(city);
     },
 
-    // 搜索城市
     seekCity: function seekCity(city) {
       console.log(city);
       this.rouTes(city);
@@ -270,7 +263,7 @@ var qqmapsdk = new QQMapWX({
 
     },
 
-    // 实时搜索城市
+    // 实时搜索
     searchInput: function searchInput(e) {var _this = this;
       // console.log(e.detail.value)
       qqmapsdk.getSuggestion({

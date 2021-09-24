@@ -1,5 +1,6 @@
 <template>
-	<view>
+	<!-- 景点Tab切换 -->
+		<view>
 			<view class="locality">
 			</view>	
 			<!-- tab -->
@@ -39,7 +40,6 @@
 		methods:{
 			//景点下标
 			menubtn(index,name){
-				
 				this.num = index
 				// 用子组件调用父组件方法
 				this.$parent.fatherMethod(name)

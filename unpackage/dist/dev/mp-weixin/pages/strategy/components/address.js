@@ -139,7 +139,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 var _default =
 {
   name: 'add',
@@ -148,7 +147,6 @@ var _default =
 
 
   methods: {
-    //点击定位跳转到搜索页面
     chooseCity: function chooseCity() {
       uni.navigateTo({
         url: '../city/city' });

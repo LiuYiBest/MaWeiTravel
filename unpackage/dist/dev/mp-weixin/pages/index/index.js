@@ -189,8 +189,6 @@ var _vuex = __webpack_require__(/*! vuex */ 12);function ownKeys(object, enumera
       Articleend: []
       // loadinglist:false  //tab切换的loading状态
     };
-
-
   },
 
   // 云开发动态轮播图
@@ -202,15 +200,10 @@ var _vuex = __webpack_require__(/*! vuex */ 12);function ownKeys(object, enumera
     // 并发批量请求 promise.all,可以批量请求多个接口，而且同时得到所有数据
     Promise.all([(0, _cloundfun.home)(tab), (0, _cloundfun.homelist)(listing)]) //, homelist(listing, this.pageid)]home(banner),
     .then(function (res) {
-      console.log(res);
-      // 轮播
-      // this.banner = res[0].data
       // tab切换
-      console.log('tab切换测试222');
       _this.tab = res[0].data;
       // 攻略景点列表数据的第一个tab的数据
       _this.Articleend = res[1].data;
-
     }).
     catch(function (err) {
       console.log(err);
@@ -230,7 +223,6 @@ var _vuex = __webpack_require__(/*! vuex */ 12);function ownKeys(object, enumera
   onPageScroll: function onPageScroll(e) {
     this.rect = e.scrollTop;
   },
-
 
   // 计算属性会时刻监听数据变化，只要数据发生变化，计算属性就会重新执行
   computed: _objectSpread(_objectSpread({},

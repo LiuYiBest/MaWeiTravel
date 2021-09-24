@@ -139,6 +139,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   name: 'cont',
@@ -152,7 +153,6 @@ var _default =
   },
   methods: {
     localCont: function localCont(id) {
-      // console.log(id)
       uni.navigateTo({
         url: '../details/detalis?id=' + id });
 

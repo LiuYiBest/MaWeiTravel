@@ -35,7 +35,6 @@
 						<text>{{item.name}}</text>
 					</view>
 				</view>
-				
 			</view>
 			
 			<view class="baiban">
@@ -50,7 +49,6 @@
 			</view>
 		</view>
 		</view>
-	
 </template>
 
 <script>
@@ -96,17 +94,10 @@
 						icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/感叹号.svg',
 						key: 3,
 					}
-					
-		
-					
-					
-
 				]
 			};
 		},
-		methods:{
-			
-					 
+		methods:{		 
 					 tiaozhuan(key){
 						 //抽奖页面
 						if(key==1){
@@ -188,7 +179,6 @@
 					// 请求数据库看看用户有没有登录
 					this.ifUser()
 				}
-				
 			}
 </script>
 

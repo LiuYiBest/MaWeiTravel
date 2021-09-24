@@ -324,14 +324,6 @@ var users = db.collection('user');var _default =
 
     // 提交
     suBmitd: function suBmitd() {
-      // console.log('11222')
-      // console.log(this.classdata)
-      // console.log(this.titledata)
-      // console.log(this.tipsdata)
-      // console.log(this.topimg)
-      // console.log(this.videos)
-      // console.log(this.address)
-      // this.address == '福州市'
       // this.HMmessages.show('标题必填',{icon:'success',background:'rgb(128, 191, 255)'})
       if (this.titledata == '') {
         var tip = '标题必填';
@@ -384,13 +376,13 @@ var users = db.collection('user');var _default =
     // 用户上传数据到数据库：1，await 先上传图片到云储存，2，await 上传视频到云储存，3，await 上传所有数据到数据库
     userdata: function userdata() {var _this4 = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var staticimg, staticvideo;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
 
-                  _this4.staticImg());case 2:staticimg = _context.sent;
-                console.log(staticimg);
-                // 等待视频上传到存储
-                _context.next = 6;return _this4.staticVideo();case 6:staticvideo = _context.sent;
-                console.log(staticvideo);
-                // 最后一步把用户填写的所有数据一并提交到数据库
-                _context.next = 10;return _this4.cloudData(staticimg, staticvideo);case 10:case "end":return _context.stop();}}}, _callee);}))();
+                  _this4.staticImg());case 2:staticimg = _context.sent;_context.next = 5;return (
+
+
+                  _this4.staticVideo());case 5:staticvideo = _context.sent;_context.next = 8;return (
+
+
+                  _this4.cloudData(staticimg, staticvideo));case 8:case "end":return _context.stop();}}}, _callee);}))();
     },
 
     // 先等待图片上传到云存储
@@ -492,8 +484,6 @@ var users = db.collection('user');var _default =
         console.log(err);
       });
     },
-
-
 
     // 及时反馈
     proMpt: function proMpt(tip) {

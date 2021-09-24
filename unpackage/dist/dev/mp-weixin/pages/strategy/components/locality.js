@@ -128,6 +128,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 //
 //
 //
+//
 var _default =
 {
   name: 'local',
@@ -155,7 +156,6 @@ var _default =
   methods: {
     //景点下标
     menubtn: function menubtn(index, name) {
-
       this.num = index;
       // 用子组件调用父组件方法
       this.$parent.fatherMethod(name);

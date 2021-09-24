@@ -1,4 +1,5 @@
 <template>
+	<!-- 文章内容 -->
 	<view class="active">
 			<view class="conteng">
 				<block v-for="(item,index) in localdata" :key="index">
@@ -36,7 +37,6 @@
 		},
 		methods:{
 			localCont(id){
-				// console.log(id)
 				uni.navigateTo({
 					url:'../details/detalis?id=' + id
 				})

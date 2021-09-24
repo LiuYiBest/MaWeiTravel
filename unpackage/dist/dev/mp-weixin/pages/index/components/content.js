@@ -158,12 +158,10 @@ var _cloundfun = __webpack_require__(/*! ../../../common/cloundfun.js */ 19); //
 //
 //引入攻略列表的数据库接口
 var _default = { name: "tab", props: { tab: Array }, data: function data() {return { num: 0 };}, methods: { //点击下个图标更改样式
-    tbas: function tbas(index, nav) {var _this = this;console.log(index); //测试下标数据
-      console.log(nav); //测试NAV数据
+    tbas: function tbas(index, nav) {var _this = this; // console.log(nav) //测试NAV数据
       this.num = index; //请求数据库
-      (0, _cloundfun.homelist)(nav).then(function (res) {console.log(res); // vuex传值 vuex登场
-        var listdata = res.data;_this.$store.commit('listmuta', listdata);}).
-      catch(function (err) {
+      (0, _cloundfun.homelist)(nav).then(function (res) {// vuex传值 
+        var listdata = res.data;_this.$store.commit('listmuta', listdata);}).catch(function (err) {
         console.log(err);
       });
     } } };exports.default = _default;

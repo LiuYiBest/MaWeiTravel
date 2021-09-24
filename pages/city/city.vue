@@ -1,11 +1,11 @@
 <template>
 	<view>
-		<!--搜索城市 -->
+		<!--城市目的地 -->
 		<view class="margin-search">
 			<view class="search-cont">
 				<view class="city-search">
 					<image src="cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/搜索.svg" mode="widthFix" class="search-img"></image>
-					<input type="text" placeholder="发现你感兴趣的目的地" @focus="searchCity" @input="searchInput" v-model="keywoeds"/>
+					<input type="text" placeholder="目的地" @focus="searchCity" @input="searchInput" v-model="keywoeds"/>
 				</view>
 				<view class="search-code" v-if="!citynone" @click="canCel">
 					<image src="../../static/tab/chaa.svg" mode="widthFix"></image>
@@ -13,7 +13,6 @@
 			</view>
 		</view>
 		
-		<!-- 点击搜索隐藏 -->
 				<view v-if="citynone">
 					<!-- 定位城市 -->
 					<view class="city-view">
@@ -23,16 +22,14 @@
 							<text class="city-text" @click="clickCity()">{{address}}</text>
 						</view>
 					</view>
-					
-					<!-- 热门城市 -->
-					<view class="hot-city">热门城市</view>
+					<view class="hot-city">城市</view>
 					<view class="menu-block">
 						<block v-for="(item,index) in city" :key="index">
 							<view @click="hotCity(item.name)">{{item.name}}</view>
 						</block>
 					</view>
 				</view>
-		<!-- 显示搜索的城市 -->
+		<!-- 显示的城市 -->
 				<view class="results" v-if="!citynone">
 					<block v-for="(item,index) in citydata" :key='index'>
 						<view class="results-city" @click="seekCity(item)">
@@ -59,13 +56,10 @@ export default {
 		return {
 			citynone:true,
 			address:'',
-			citydata:[], //搜索的城市
+			citydata:[], 
 			keywoeds:'',
 			pageroute:'',  //从哪个页面进来的路由
 			city: [
-				{
-				"name":'福州市'
-				},
 				{
 				"name":'福州市'
 				},
@@ -108,13 +102,12 @@ export default {
 			this.rouTes(cityion)
 		},
 		
-		// 取到热门城市
+		// 取到城市
 		hotCity(city){
 			// console.log(city)
 			this.rouTes(city)
 		},
 		
-		// 搜索城市
 		seekCity(city){
 			console.log(city)
 			this.rouTes(city)
@@ -138,7 +131,7 @@ export default {
 			});
 		},
 		
-		// 实时搜索城市
+		// 实时搜索
 		searchInput(e){
 			// console.log(e.detail.value)
 			qqmapsdk.getSuggestion({
