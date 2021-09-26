@@ -66,24 +66,14 @@
 				"navigationBarTitleText": "签到"
 			}
 		},
-		{
-			"path": "pages/my/shop",
-			"style": {
-				"navigationBarTitleText": "订单"
-			}
-		},
+		
 		{
 			"path": "pages/my/shoucan",
 			"style": {
 				"navigationBarTitleText": "反馈"
 			}
 		},
-		{
-			"path": "pages/my/guanyu",
-			"style": {
-				"navigationBarTitleText": "商品"
-			}
-		},
+		
 		{
 			"path": "pages/my/statement",
 			"style": {

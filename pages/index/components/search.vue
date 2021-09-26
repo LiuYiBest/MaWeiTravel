@@ -56,19 +56,19 @@
 				topSwiper: [
 					
 					{
-						imgsrc: require('../../../static/tab/轮播图1.jpg')
+						imgsrc: require('../../../static/tab/banner1.jpg')
 					},
 					{
-						imgsrc: require('../../../static/tab/轮播图2.jpg')
+						imgsrc: require('../../../static/tab/banner2.jpg')
 					},
 					{
-						imgsrc: require('../../../static/tab/轮播图3.jpg')
+						imgsrc: require('../../../static/tab/banner3.jpg')
 					},
 					{
-						imgsrc: require('../../../static/tab/轮播图4.jpg')
+						imgsrc: require('../../../static/tab/banner4.jpg')
 					},
 					{
-						imgsrc: require('../../../static/tab/轮播图5.jpg')
+						imgsrc: require('../../../static/tab/banner5.jpg')
 					}
 				]
 			}

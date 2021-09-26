@@ -55,7 +55,6 @@
 		// 云开发动态轮播图
 		created() {
 			// 请求轮播数据
-			// let banner = 'banner'
 			let tab = 'tab'
 			let listing = 'jingdian'
 			// 并发批量请求 promise.all,可以批量请求多个接口，而且同时得到所有数据

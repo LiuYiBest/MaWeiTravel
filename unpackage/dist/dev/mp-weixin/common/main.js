@@ -18,7 +18,7 @@ var _store = _interopRequireDefault(__webpack_require__(/*! ./pages/store/store.
 _vue.default.prototype.$store = _store.default;
 
 //引入没有数据的提示
-var nonedata = function nonedata() {__webpack_require__.e(/*! require.ensure | element/none */ "element/none").then((function () {return resolve(__webpack_require__(/*! ./element/none.vue */ 137));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+var nonedata = function nonedata() {__webpack_require__.e(/*! require.ensure | element/none */ "element/none").then((function () {return resolve(__webpack_require__(/*! ./element/none.vue */ 123));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 _vue.default.component('none-data', nonedata);
 
 

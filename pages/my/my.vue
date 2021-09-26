@@ -79,16 +79,7 @@
 						url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/旅游.svg'
 					},
 				],
-				menus: [{
-						name: '全部订单',
-						icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/收藏.svg',
-						key: 1,
-					},
-					{
-						name: '商品列表',
-						icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/商品.svg',
-						key: 2,
-					},
+				menus: [
 					{
 						name: '关于小程序',
 						icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/感叹号.svg',
@@ -120,18 +111,6 @@
 							
 					 },
 					 xiatiao(key){
-						 //订单
-						 if(key==1){
-						 	 uni.navigateTo({
-						 		url:'shop'
-						 	 })
-						  }
-						  //商品列表
-						  if(key==2){
-						  	 uni.navigateTo({
-						  		url:'guanyu'
-						  	 })
-						   }
 						   //相关声明
 						   if(key==3){
 						   	 uni.navigateTo({

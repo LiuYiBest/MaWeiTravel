@@ -241,32 +241,11 @@ var _list = __webpack_require__(/*! ../../common/list.js */ 28); //
 //
 //
 var db = wx.cloud.database();var users = db.collection('user'); // 引进公用登录js
-var _default = { data: function data() {return { wxlofin: false, username: [], status: [{ key: 1, name: '抽奖中心', url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/活动.svg' }, { key: 2, name: '签到日历', url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/圈子管理.svg' }, { key: 3, name: '问题反馈', url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/旅游.svg' }], menus: [{ name: '全部订单', icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/收藏.svg', key: 1 }, { name: '商品列表', icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/商品.svg', key: 2 }, { name: '关于小程序', icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/感叹号.svg', key: 3 }] };}, methods: { tiaozhuan: function tiaozhuan(key) {//抽奖页面
+var _default = { data: function data() {return { wxlofin: false, username: [], status: [{ key: 1, name: '抽奖中心', url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/活动.svg' }, { key: 2, name: '签到日历', url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/圈子管理.svg' }, { key: 3, name: '问题反馈', url: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/旅游.svg' }], menus: [{ name: '关于小程序', icon: 'cloud://xindemo-9gms6e168e9f811e.7869-xindemo-9gms6e168e9f811e-1304822355/userimage/感叹号.svg', key: 3 }] };}, methods: { tiaozhuan: function tiaozhuan(key) {//抽奖页面
       if (key == 1) {uni.navigateTo({ url: 'choudemo' });} //活动签到跳转
       if (key == 2) {uni.navigateTo({ url: 'sigin-in' });} //问题反馈
-      if (key == 3) {
-        uni.navigateTo({
-          url: 'shoucan' });
-
-      }
-
-    },
-    xiatiao: function xiatiao(key) {
-      //订单
-      if (key == 1) {
-        uni.navigateTo({
-          url: 'shop' });
-
-      }
-      //商品列表
-      if (key == 2) {
-        uni.navigateTo({
-          url: 'guanyu' });
-
-      }
-      //相关声明
-      if (key == 3) {
-        uni.navigateTo({
+      if (key == 3) {uni.navigateTo({ url: 'shoucan' });}}, xiatiao: function xiatiao(key) {//相关声明
+      if (key == 3) {uni.navigateTo({
           url: 'statement' });
 
       }
