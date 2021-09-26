@@ -49,8 +49,10 @@
 		</view>
 	</view>
 	
-	<!-- 发布 -->
-	<view class="release" @click="suBmitd()">发布</view>
+	<!-- 为了能够练习代码  在上线的版本禁掉用户的发布功能 -->
+	<!-- <view class="release" @click="suBmitd()">发布</view> -->
+	<!-- 取消发布 -->
+	<view class="release">发布</view>
 	<!-- 及时反馈组件 -->
 	<HMmessages ref="HMmessages" @complete="HMmessages = $refs.HMmessages" @clickMessage="clickMessage"></HMmessages>
 	
