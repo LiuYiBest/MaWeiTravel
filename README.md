@@ -11,17 +11,42 @@ HbuilderX 微信开发者工具 Git  uni-app框架  原生小程序  微信云�
 
 
 # 项目部署：
-需要修改的参数 在app.js文件中对云开发进行初始化时需要对env参数进行修改
+uni-app配置小程序在manifest.json中配置微信小程序的AppID，需要申请腾讯地图位置服务，使用微信小程序JavaScriptSDK，在common/list.js封装地图的公用定位
+```
+var QQMapWX = require('../common/qqmap-wx-jssdk.js');
+var qqmapsdk;
+
+// 腾讯地图服务
+var addressdata = function(){
+	return new Promise((resolve,reject)=>{
+		// 实例化地图API核心类
+		qqmapsdk = new QQMapWX({
+		key: 'XXXXX-XXXXX-XXXXX-XXXXX-XXXXX-XXXXX'
+		});
+		qqmapsdk.reverseGeocoder({
+			success:(res)=>{
+				resolve(res)
+			},						
+			fail:(err)=>{
+				reject(err)
+			}
+		})
+	})
+}
+//导出外部
+export {addressdata}
+```
 
 
-   - 腾讯位置服务
-4. 云数据库中需要创建哪些数据
-   - allAccount集合（用于储存所有的账户，集合权限为“仅创建者可读写”）
-   - otherRecord集合（用于储存支出、收入、转账、借贷的记录，集合权限为“仅创建者可读写”）
-   - knowDetail集合（用户储存“学习充电”的数据，集合权限为“所有用户可读”）
-   - grade集合（存储用户的评分，集合权限为“所有用户可读，仅创建者可读写”）
-   - userinfo集合（存储用户信息，头像、微信昵称等，集合权限为“所有用户可读，仅创建者可读写”）
-5. 云存储中需要上传哪些文件
-   - 小程序用到的icon
-   - “学习充电”用到的图片
-   - 用户上传的图片
+# 云数据库中的数据集合
+   - user集合（存储微信用户信息，头像、微信昵称等，权限为“仅创建者可读写”）
+   - tab集合（用于对文章进行分类处理，权限为“仅创建者可读写”）
+   - banner集合（用于设置轮播图选项，权限为“所有用户可读，仅创建者可读写”）
+   - message集合（用户发布的文章的内容，权限为“所有用户可读，仅创建者可读写”）
+   - strategy集合（存储用户发表的评论，集合权限为“所有用户可读，仅创建者可读写”）
+
+# 云存储中所需的文件
+   - 微信小程序用到的SVG图片（推荐阿里的iconfont）
+   - 景区的风景预览图片
+   - 用户上传的图片和视频
+   - 轮播图所需的图片
