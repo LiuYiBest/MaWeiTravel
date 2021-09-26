@@ -1,6 +1,6 @@
 # 船政旅游小程序
-![gh_14b48a459592_430 (1)](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/gh_14b48a459592_430 (1).jpg)
 
+![image](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/gh_14b48a459592_430 (1).jpg)
 
 # 所需工具
 HbuilderX 微信开发者工具 Git  uni-app框架  原生小程序  微信云开发 Sass预处理器
@@ -38,7 +38,6 @@ var addressdata = function(){
 //导出外部
 export {addressdata}
 ```
-
 
 # 云数据库中的数据集合
    - user集合（存储微信用户信息，头像、微信昵称等，权限为“仅创建者可读写”）
