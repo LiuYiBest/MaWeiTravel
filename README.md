@@ -1,6 +1,6 @@
 # 船政旅游小程序
+![image-20210926222518624](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/image-20210926222518624.png)
 
-![image-20210926222408292](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/image-20210926222408292.png)
 # 所需工具
 HbuilderX 微信开发者工具 Git  uni-app框架  原生小程序  微信云开发 Sass预处理器
 
