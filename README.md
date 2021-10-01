@@ -56,7 +56,7 @@ export {addressdata}
 
 ```
 MaWeiTravel
-├─ App.vue										//首页组件
+├─ App.vue										
 ├─ common                                       
 │    ├─ cloundfun.js                            // 封装数据库请求操作
 │    ├─ list.js                                 // 引入腾讯地图SDK核心类
