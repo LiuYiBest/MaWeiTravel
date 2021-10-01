@@ -2,7 +2,6 @@
 	<view class='container'>
 		<view class='header bg-ff row padding'>
 			<icon type='search' size='22' color='#999' />
-			<input placeholder='请输入地址' class='col padding-l' @input='bindInput' focus auto-focus @confirm='bindConfirm'></input>
 		</view>
 		<view class='bg-ff'>
 			<view class='padding color-99 font-26'>从下面列表中选择</view>

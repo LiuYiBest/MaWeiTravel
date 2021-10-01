@@ -50,3 +50,67 @@ export {addressdata}
    - 景区的风景预览图片
    - 用户上传的图片和视频
    - 轮播图所需的图片
+
+# 项目目录结构
+
+```
+MaWeiTravel
+├─ App.vue										//首页组件
+├─ common                                       
+│    ├─ cloundfun.js                            // 封装数据库请求操作
+│    ├─ list.js                                 // 引入腾讯地图SDK核心类
+│    ├─ qqmap-wx-jssdk.js                       // 微信小程序JavaScriptSDK
+│    ├─ uni.css                                 // 封装封装公共的css样式
+│    └─ util.js                                 // 微信小程序自带时间
+├─ components
+│    └─ HM-messages 
+│           └─ HM-messages.vue                  // 全局提示框插件    
+├─ element 
+│    ├─ modal.vue                               // 用户登录注册
+│    └─ none.vue                                // 数据为空的提示
+├─ libs
+│    └─ qqmap-wx-jssdk.min.js                   // 腾讯地图SDK包
+├─ main.js                                      // 文件入口
+├─ manifest.json                                // 基础配置
+├─ package-lock.json                            // 依赖版本
+├─ pages
+│    ├─ address-search
+│    │    └─ address-search.vue                 // 地图位置
+│    ├─ city
+│    │    └─ city.vue                           // 当前城市
+│    ├─ details
+│    │    ├─ components
+│    │    │    ├─ banner.vue                    // 轮播图组件
+│    │    │    ├─ matter.vue                    // 文章图片视频介绍组件
+│    │    │    ├─ message.vue                   // 评论留言区组件
+│    │    │    └─ navs.vue                      // 文章导航锚点组件
+│    │    └─ detalis.vue                        // 文章页面父组件
+│    ├─ index
+│    │    ├─ components
+│    │    │    ├─ article.vue                   // 文章介绍组件
+│    │    │    ├─ classify.vue                  // 景区表格组件
+│    │    │    ├─ content.vue                   // 景点滑动组件
+│    │    │    ├─ search.vue                    // 搜索框组件
+│    │    ├─ index.vue                          // 主界面父组件
+│    ├─ my
+│    │    ├─ choudemo.vue                       // 抽奖组件
+│    │    ├─ feedback.scss                      // feedback样式
+│    │    ├─ my.vue                             // 个人中心
+│    │    ├─ sigin-in.vue                       // 签到日历
+│    │    └─ statement.vue                      // 关于小程序
+│    ├─ search
+│    │    └─ search.vue                         // 文章搜索界面
+│    ├─ store
+│    │    └─ store.js                           // Vuex 数据仓库
+│    ├─ strategy
+│    │    ├─ components
+│    │    │    ├─ address.vue                   // 景点地图组件
+│    │    │    ├─ content.vue                   // 文章内容组件
+│    │    │    └─ locality.vue                  // 景点Tab切换组件
+│    │    └─ strategy.vue                       // 攻略页面父组件
+├─ pages.json                                   // 页面配置
+├─ uni.scss                                     // SCSS预处理
+```
+
+
+

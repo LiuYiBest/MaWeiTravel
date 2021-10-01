@@ -29,7 +29,7 @@
 						</block>
 					</view>
 				</view>
-		<!-- 显示的城市 -->
+		<!-- 显示城市 -->
 				<view class="results" v-if="!citynone">
 					<block v-for="(item,index) in citydata" :key='index'>
 						<view class="results-city" @click="seekCity(item)">
@@ -38,7 +38,6 @@
 						</view>	
 					</block>
 				</view>	
-		
 	</view>
 </template>
 
@@ -69,15 +68,7 @@ export default {
 				{
 				"name":'上海市'
 				},
-				{
-				"name":'广州市'
-				},
-				{
-				"name":'深圳市'
-				},
-				{
-				"name":'杭州市'
-				}
+					
 				],
 
 		};
@@ -163,8 +154,8 @@ export default {
 					this.address = res.result.ad_info.city
 				})
 				.catch((err)=>{
-					console.log('用户拒绝定位')
-					this.address = '昆明市'
+					console.log('定位')
+					this.address = '福州市'
 				})
 			}
 	},
@@ -183,7 +174,6 @@ export default {
 
 <style scoped>
 	page{background: #ffffff;}
-		/* 搜索城市 */
 		.margin-search{margin-bottom: 40upx;}
 		.city-search{
 		    height: 70upx;
@@ -208,7 +198,6 @@ export default {
 					}	
 		.search-code image{width: 50upx; height: 50upx;}
 		.search-code{width: 50upx; height: 50upx; padding: 0 15upx;}
-		/* 定位城市 */
 			.city-view image{width: 40upx; height: 40upx; padding-right: 20upx;}
 			.city-text{font-size: 30upx; color: #3f3f3f;}
 			.posit-city{display: flex; align-items: center; padding-left: 35upx;}
@@ -235,7 +224,6 @@ export default {
 				justify-content: flex-start;
 				flex-wrap: wrap;
 			}
-			/* 搜索的结果 */
 				.results text{display: block; font-size: 30upx; color: #ee9900;}
 				.results-city image{width: 40upx; height: 40upx; padding-right: 20upx;}
 				.results-city{display: flex; align-items: center; border-bottom: 1rpx solid #e5e5e5;

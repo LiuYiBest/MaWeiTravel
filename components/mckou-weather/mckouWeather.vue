@@ -1,5 +1,5 @@
 <template>
-	<!-- 天气预报插件 -->
+	<!-- 天气预报 -->
 	<view class="mckou-weather-content">
 		<view class="more-day-report">
 			<view class="top-module">
