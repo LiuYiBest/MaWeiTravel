@@ -9,6 +9,23 @@ HbuilderX编辑器 微信开发者工具  Git  uni-app框架  原生小程序  �
 2. 提供定位、景区地图、发布文章、天气预报、攻略区、个人中心等多个功能模块
 3. 实时更新文章数据，文章导航预览，用户评论区
 4. 提供“附近景点提示”的地图查询、攻略区文章内容搜索
+# 项目预览
+
+**首页**
+
+![image-20211015211820844](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/image-20211015211820844.png)
+
+**攻略区**
+
+![image-20211015211849870](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/image-20211015211849870.png)
+
+**文章发布**
+
+![image-20211015211947015](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/image-20211015211947015.png)
+
+**个人中心**
+
+![image-20211015212001751](https://typoraimagedemo.oss-cn-shenzhen.aliyuncs.com/Qianduan/image-20211015212001751.png)
 
 
 # 项目部署：
